@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Ceritakan sejarah Masjid Agung Bangkalan!",
+    "topik": "Bangunan Bersejarah"
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Siapa itu Syaikhona Kholil Bangkalan?",
+    "topik": "Tokoh Penting Bangkalan"
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Apa saja makanan khas Bangkalan yang wajib dicoba?",
+    "topik": "Kuliner Khas"
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Apa saja koleksi yang ada di Museum Cakraningrat?",
+    "topik": "Koleksi Museum"
+  }
+]

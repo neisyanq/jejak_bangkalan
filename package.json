@@ -1,0 +1,14 @@
+{
+  "name": "jejak-bangkalan-monorepo",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Full-Stack Monorepo Jejak Bangkalan Heritage (React JSX + Node.js + FastAPI RAG AI)",
+  "scripts": {
+    "install:all": "npm --prefix front-end install && npm --prefix back-end/node-server install",
+    "dev:frontend": "npm --prefix front-end run dev",
+    "build:frontend": "npm --prefix front-end run build",
+    "start:node": "npm --prefix back-end/node-server start",
+    "start:rag": "python back-end/main.py",
+    "index:rag": "python rag-heritage/indexing.py"
+  }
+}
