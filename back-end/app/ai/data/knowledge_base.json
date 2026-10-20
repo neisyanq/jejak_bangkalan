@@ -1,0 +1,474 @@
+[
+  {
+    "id": "wb_1",
+    "title": "Mercusuar Sembilangan",
+    "situs": "Mercusuar Sembilangan",
+    "category": "Bangunan",
+    "location": "Kecamatan Socah",
+    "content": "Mercusuar Sembilangan terletak di Kecamatan Socah (Kategori: Bangunan). Mercusuar peninggalan masa kolonial Belanda yang menjadi penanda penting bagi pelayaran di perairan Madura. Bangunan ini memiliki nilai sejarah dalam perkembangan navigasi laut di kawasan Bangkalan."
+  },
+  {
+    "id": "wb_2",
+    "title": "Masjid Agung Bangkalan",
+    "situs": "Masjid Agung Bangkalan",
+    "category": "Bangunan",
+    "location": "Pusat Kota",
+    "content": "Masjid Agung Bangkalan terletak di Pusat Kota (Kategori: Bangunan). Salah satu bangunan penting dalam kehidupan keagamaan masyarakat Bangkalan. Masjid ini menjadi tempat ibadah sekaligus bagian dari perjalanan perkembangan Islam."
+  },
+  {
+    "id": "wb_3",
+    "title": "Museum Cakraningrat",
+    "situs": "Museum Cakraningrat",
+    "category": "Bangunan",
+    "location": "Bangkalan",
+    "content": "Museum Cakraningrat terletak di Bangkalan (Kategori: Bangunan). Museum yang berkaitan dengan pelestarian peninggalan sejarah dan budaya Bangkalan."
+  },
+  {
+    "id": "wb_4",
+    "title": "Pesarean Aer Mata Ebu",
+    "situs": "Pesarean Aer Mata Ebu",
+    "category": "Bangunan",
+    "location": "Arosbaya",
+    "content": "Pesarean Aer Mata Ebu terletak di Arosbaya (Kategori: Bangunan). Kompleks pemakaman keluarga bangsawan dan sejarah kerajaan Madura."
+  },
+  {
+    "id": "wb_5",
+    "title": "Tari Rokat",
+    "situs": "Tari Rokat",
+    "category": "Tarian",
+    "location": "Bangkalan",
+    "content": "Tari Rokat terletak di Bangkalan (Kategori: Tarian). Tarian yang berkaitan dengan tradisi rokat atau ritual masyarakat Madura."
+  },
+  {
+    "id": "wb_6",
+    "title": "Tari Moang Sangkal",
+    "situs": "Tari Moang Sangkal",
+    "category": "Tarian",
+    "location": "Bangkalan",
+    "content": "Tari Moang Sangkal terletak di Bangkalan (Kategori: Tarian). Tarian khazanah Madura dengan simbol penolakan hal buruk."
+  },
+  {
+    "id": "wb_7",
+    "title": "Tari Angklung Topeng",
+    "situs": "Tari Angklung Topeng",
+    "category": "Tarian",
+    "location": "Kesenian Lokal",
+    "content": "Tari Angklung Topeng terletak di Kesenian Lokal (Kategori: Tarian). Pertunjukan tari yang memadukan unsur gerak, topeng, dan musik tradisional."
+  },
+  {
+    "id": "wb_8",
+    "title": "Tari Nelayan",
+    "situs": "Tari Nelayan",
+    "category": "Tarian",
+    "location": "Pesisir Bangkalan",
+    "content": "Tari Nelayan terletak di Pesisir Bangkalan (Kategori: Tarian). Tarian pesisir yang menggambarkan aktivitas melaut, kerja sama, dan semangat nelayan."
+  },
+  {
+    "id": "wb_9",
+    "title": "Sholawat Nabi",
+    "situs": "Sholawat Nabi",
+    "category": "Tarian",
+    "location": "Religi",
+    "content": "Sholawat Nabi terletak di Religi (Kategori: Tarian). Seni pertunjukan yang memadukan gerakan tari dengan lantunan selawat."
+  },
+  {
+    "id": "wb_10",
+    "title": "Karapan Sapi",
+    "situs": "Karapan Sapi",
+    "category": "Kesenian",
+    "location": "Madura Raya",
+    "content": "Karapan Sapi terletak di Madura Raya (Kategori: Kesenian). Tradisi perlombaan pacuan sapi ikonik Madura."
+  },
+  {
+    "id": "wb_11",
+    "title": "Sapi Sonok",
+    "situs": "Sapi Sonok",
+    "category": "Kesenian",
+    "location": "Madura Raya",
+    "content": "Sapi Sonok terletak di Madura Raya (Kategori: Kesenian). Tradisi peragaan sepasang sapi betina yang dihias dekoratif."
+  },
+  {
+    "id": "wb_12",
+    "title": "Sandur Madura",
+    "situs": "Sandur Madura",
+    "category": "Kesenian",
+    "location": "Bangkalan",
+    "content": "Sandur Madura terletak di Bangkalan (Kategori: Kesenian). Kesenian tradisional yang memadukan gerak, musik, dan interaksi antarpelaku seni."
+  },
+  {
+    "id": "wb_13",
+    "title": "Hadrah Jidor",
+    "situs": "Hadrah Jidor",
+    "category": "Kesenian",
+    "location": "Bangkalan",
+    "content": "Hadrah Jidor terletak di Bangkalan (Kategori: Kesenian). Musik bernuansa Islami yang menggunakan alat tabuh dan pujian selawat."
+  },
+  {
+    "id": "wb_14",
+    "title": "Kejung Bangkalan",
+    "situs": "Kejung Bangkalan",
+    "category": "Kesenian",
+    "location": "Tradisi Tutur",
+    "content": "Kejung Bangkalan terletak di Tradisi Tutur (Kategori: Kesenian). Seni sastra lisan berupa lantunan tembang pantun atau papareghan."
+  },
+  {
+    "id": "wb_15",
+    "title": "Batik Madura",
+    "situs": "Batik Madura",
+    "category": "Kesenian",
+    "location": "Kerajinan Lokal",
+    "content": "Batik Madura terletak di Kerajinan Lokal (Kategori: Kesenian). Seni kriya kain bermotif khas Madura dengan warna berani dan beragam."
+  },
+  {
+    "id": "wb_16",
+    "title": "Rokat Tase'",
+    "situs": "Rokat Tase'",
+    "category": "Tradisi",
+    "location": "Sepulu & Arosbaya",
+    "content": "Rokat Tase' terletak di Sepulu & Arosbaya (Kategori: Tradisi). Upacara adat pesisir sebagai ungkapan syukur sekaligus doa memohon keselamatan melaut."
+  },
+  {
+    "id": "wb_17",
+    "title": "Ziarah Pesarean",
+    "situs": "Ziarah Pesarean",
+    "category": "Tradisi",
+    "location": "Wisata Religi",
+    "content": "Ziarah Pesarean terletak di Wisata Religi (Kategori: Tradisi). Tradisi ziarah makam bersejarah untuk mendoakan leluhur sekaligus mengenang tokoh."
+  },
+  {
+    "id": "wb_18",
+    "title": "Kirab Budaya",
+    "situs": "Kirab Budaya",
+    "category": "Tradisi",
+    "location": "Bangkalan",
+    "content": "Kirab Budaya terletak di Bangkalan (Kategori: Tradisi). Arak-arakan yang menampilkan kekayaan budaya daerah melalui pakaian tradisional."
+  },
+  {
+    "id": "wb_19",
+    "title": "Peringatan Maulid Nabi",
+    "situs": "Peringatan Maulid Nabi",
+    "category": "Tradisi",
+    "location": "Keagamaan Lokal",
+    "content": "Peringatan Maulid Nabi terletak di Keagamaan Lokal (Kategori: Tradisi). Peringatan kelahiran Nabi Muhammad SAW dengan pembacaan selawat, doa, dan pengajian."
+  },
+  {
+    "id": "wb_20",
+    "title": "Tellasan (Lebaran)",
+    "situs": "Tellasan (Lebaran)",
+    "category": "Tradisi",
+    "location": "Madura Raya",
+    "content": "Tellasan (Lebaran) terletak di Madura Raya (Kategori: Tradisi). Perayaan hari raya yang menjadi momen silaturahmi besar-besaran."
+  },
+  {
+    "id": "wb_21",
+    "title": "Nasi Serpang",
+    "situs": "Nasi Serpang",
+    "category": "Kuliner",
+    "location": "Bangkalan",
+    "content": "Nasi Serpang terletak di Bangkalan (Kategori: Kuliner). Makanan tradisional khas Kabupaten Bangkalan yang memadukan lauk dari hasil laut dan olahan daging."
+  },
+  {
+    "id": "wb_22",
+    "title": "Topak Ladeh",
+    "situs": "Topak Ladeh",
+    "category": "Kuliner",
+    "location": "Bangkalan",
+    "content": "Topak Ladeh terletak di Bangkalan (Kategori: Kuliner). Hidangan khas Bangkalan yang identik dengan perayaan Lebaran Ketupat."
+  },
+  {
+    "id": "wb_23",
+    "title": "Tajin Sobih",
+    "situs": "Tajin Sobih",
+    "category": "Kuliner",
+    "location": "Desa Sobih",
+    "content": "Tajin Sobih terletak di Desa Sobih (Kategori: Kuliner). Jajanan tradisional berupa campuran aneka bubur manis yang berasal dari Desa Sobih."
+  },
+  {
+    "id": "wb_24",
+    "title": "Sewel",
+    "situs": "Sewel",
+    "category": "Kuliner",
+    "location": "Kecamatan Socah",
+    "content": "Sewel terletak di Kecamatan Socah (Kategori: Kuliner). Jajanan gurih khas wilayah Socah yang terbuat dari tepung tapioka dengan campuran udang."
+  },
+  {
+    "id": "wb_25",
+    "title": "Bebek Sinjay",
+    "situs": "Bebek Sinjay",
+    "category": "Kuliner",
+    "location": "Bangkalan",
+    "content": "Bebek Sinjay terletak di Bangkalan (Kategori: Kuliner). Kuliner populer dari Bangkalan yang sangat terkenal dengan sajian bebek goreng rempah gurih."
+  },
+  {
+    "id": "wb_26",
+    "title": "Soto Tongkol",
+    "situs": "Soto Tongkol",
+    "category": "Kuliner",
+    "location": "Bangkalan",
+    "content": "Soto Tongkol terletak di Bangkalan (Kategori: Kuliner). Hidangan soto unik yang memanfaatkan ikan tongkol sebagai bahan utamanya."
+  },
+  {
+    "id": "wb_27",
+    "title": "Soto Mata Sapi",
+    "situs": "Soto Mata Sapi",
+    "category": "Kuliner",
+    "location": "Kecamatan Burneh",
+    "content": "Soto Mata Sapi terletak di Kecamatan Burneh (Kategori: Kuliner). Kuliner unik khas wilayah Burneh yang menggunakan bagian mata sapi yang direbus lunak."
+  },
+  {
+    "id": "wb_28",
+    "title": "Bongko Arosbaya",
+    "situs": "Bongko Arosbaya",
+    "category": "Kuliner",
+    "location": "Arosbaya",
+    "content": "Bongko Arosbaya terletak di Arosbaya (Kategori: Kuliner). Kuliner jajanan tradisional yang sangat khas dan terkait erat dengan sejarah di wilayah Arosbaya."
+  },
+  {
+    "id": "wb_29",
+    "title": "Ledre Sepuluh",
+    "situs": "Ledre Sepuluh",
+    "category": "Kuliner",
+    "location": "Bangkalan",
+    "content": "Ledre Sepuluh terletak di Bangkalan (Kategori: Kuliner). Ragam jajanan tradisional khas Bangkalan yang merupakan bagian penting dari khazanah kuliner."
+  },
+  {
+    "id": "km_30",
+    "title": "Koleksi Museum Cakraningrat - Keramik",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Keramik-keramik yang ditemukan merupakan barang bukti yang berhasil disematkan Pemerintah Bangkalan dari usaha perdagangan gelap terkait barang antik keramik ini berupa piring, mangkok, lepek (tatakan teko) yang berfungsi sebagai peralatan makan dan juga dekorasi rumah tinggal berdasarkan motifnya. Keramik-keramik ini berasal dari eropa, china, india, khemer dan jepang."
+  },
+  {
+    "id": "km_31",
+    "title": "Koleksi Museum Cakraningrat - Pekinangan",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Pekinangan merupakan seperangkat wadah untuk menyimpan perlengkapan untuk mengunyah sirih pinang yang merupakan simbol status sosial dan bagian penting dari budaya terutama di lingkungan kerajaan terbuat dari kuningan dilengkapi dengan:\n1. BUKOR : wadah untuk ritual sesajen\n2. PADUWAN /MELUDAH : Perlengkapan alat menyirih sekaligus wadah\n\nPerhiasan wanita bangsawan merupakan aksesoris yang lumrah digunakan bagi kalangan bangsawan wanita sebagai lambang kemewahan antara lain:\n1. PENGGEL : Perhiasan yang dipakai di pergelangan kaki\n2. CUCUK KONDE : hiasan rambut dan dipakai untuk menjepit konde\n3. BATU AKIK : perhiasan yang biasa digunakan sebagai cincin dan kalung"
+  },
+  {
+    "id": "km_32",
+    "title": "Koleksi Museum Cakraningrat - Tenong dan Lesung",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "TENONG:\nTenong merupakan wadah penyimpanan makanan tradisional yang terbuat dari anyaman bambu berbentuk bundar dan lonjong. DIgunakan untuk membawa makanan dala acara adat seperti hajatan, jajanan keliling melambangkan kebersamaan dan budaya lokal.\n\nLESUNG:\nLesung merupakan alat tradisional untuk menumbuk padi. berdasarkan bahannya terdiri dari batu dan kayu. Biasanya ditetakkan di sebelah timur rumah tradisional taneyan lanjhang."
+  },
+  {
+    "id": "km_33",
+    "title": "Koleksi Museum Cakraningrat - Kursi Keraton",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Kursi keraton merupakan alas duduk yang diperuntukkan bagi kalangan penguasa lokal di wilayah Bangkalan, berbahan kayu ukir.\nKursi ahli nujum merupakan alas duduk yang diperuntukan seorang peramal kerajaan sekaligus panglima perang. kursi ini memiliki bentuk yang unik yaitu berbentuk belah ketupat."
+  },
+  {
+    "id": "km_34",
+    "title": "Koleksi Museum Cakraningrat - Batik",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Batik merupakan salah satu karya seni khas masyarakat madura, dengan motif dan corak yang unik sehingga menjadi ciri identitas tiap-tiap daerah. seiring dengan waktu teknologi batik pun mengalami perkembangan baik dari segi peralatan maupun teknologi pengerjaan."
+  },
+  {
+    "id": "km_35",
+    "title": "Koleksi Museum Cakraningrat - Peralatan Membatik",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "1. ANGLO : wadah perapian yang dipakai pada masa lalu untuk membakar arang guna memanaskan kuali\n2. KUALI : wadah tinta/pewarna alami guna untuk mewarnai batik\n3. CANTING : alat yang digunakan untuk melukis/membentuk pola batik\n4. WAJAN DAN KOMPOR : bentuk modern dan anglo dan kuali\n5. PAPAN : digunakan untuk alas membatik"
+  },
+  {
+    "id": "km_36",
+    "title": "Koleksi Museum Cakraningrat - Ukiran Kayu",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Ukiran kayu merupakan sebuah karya seni kerajinan yang membentuk karya tiga dimensi, dimana teknik pengerjaannya menggunakan pisau pahat sehingga menghasilkan sebuah relief yang memiliki makna filosofis tertentu, ukuran kayu ini biasanya digunakan sebagai sebagai hiasan dalam rumah tradisional madura."
+  },
+  {
+    "id": "km_37",
+    "title": "Koleksi Museum Cakraningrat - Penggilingan Jamu",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Penggilingan jamu merupakan sebuah alat yang digunakan masyarakat pada masa lalu untuk menghaluskan bahan-bahan ramuan herbal (jamu) terdiri dari papan batu dan alat pipihnya."
+  },
+  {
+    "id": "km_38",
+    "title": "Koleksi Museum Cakraningrat - Kendi",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Kendi merupakan tempat untuk menyimpan air minum bentuknya teko yang terbuat dari tanah liat."
+  },
+  {
+    "id": "km_39",
+    "title": "Koleksi Museum Cakraningrat - Kemokon",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Kemokon merupakan wadah tradisional khas madura (khususnya Bangkalan) yang dulunya dipakai oleh putri bangsawan untuk menyimpan ramuan jamu, perhiasan atau barang berharga lainnya mencerminkan kekayaan budaya dan sejarah madura."
+  },
+  {
+    "id": "km_40",
+    "title": "Koleksi Museum Cakraningrat - Kaca Rias",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Kaca rias merupakan sebuah cermin yang dilengkapi dengan kayu berbau harum dengan laci yang digunakan untuk menyimpan peralatan berhias bagi putri bangsawan."
+  },
+  {
+    "id": "km_41",
+    "title": "Koleksi Museum Cakraningrat - Tabhuwen Se Senen/Car Balih",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Tabhuwen se senen merupakan alat musik tradisional yang digunakan pada masa Pemerintahan Raden Ismil/Panembahan Cakraningrat VIII (1870M) sebagai isyarat bagi pejabat keraton untuk segera berkumpul.\nSebelum akhirnya bersama-sama menghadap Raja selain itu digunakan pula untuk mengiringi latihan perang prajurit di alun-alun (LEGGUHAN)."
+  },
+  {
+    "id": "km_42",
+    "title": "Koleksi Museum Cakraningrat - Tabhuwan Lajing",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Tabhuwan Se Lajing merupakan alat musik tradisional yang digunakan pada masa pemerintahan Sultan Abdul Kadirun / Raden Cakra Adiningrat II (1815-1845) untuk pagelaran seni dan budaya di pendopo keraton Bangkalan, selain itu digunakan pula untuk menyambut tamu-tamu."
+  },
+  {
+    "id": "km_43",
+    "title": "Koleksi Museum Cakraningrat - Tabhuwan Ratna Dumilah",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Tabhuwan Ratna Dumilah merupakan alat musik tradisional yang digunakan pada masa pemerintahan Adipati Secodiningrat IV atau lebih dikenal dengan sebutan TJAKRANINGRAT VII (1849M)."
+  },
+  {
+    "id": "km_44",
+    "title": "Koleksi Museum Cakraningrat - Lonceng",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Lonceng merupakan sebuah alat berupa centa besar yang digunakan untuk memanggil prajurit kerajaan. Dibagian tengah genta terdapat inskripsi berbunyi INIE LONT JENG KANDJEN POEJA 1870. Disinyalir sejaman dengan masa Pemerintahan Raden Ismail."
+  },
+  {
+    "id": "km_45",
+    "title": "Koleksi Museum Cakraningrat - Rebab",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Rebab merupakan alat instrumen petik tradisional yang berupa resonator berbentuk tabung agak bulat dengan landasan runcing dan bergagang sebagai tempat mengatur ketegangan senar."
+  },
+  {
+    "id": "km_46",
+    "title": "Koleksi Museum Cakraningrat - Thuk-Thuk",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Thuk-thuk terbuat dari kayu utuh yang dilubangi di sisi bagian atas berfungsi sebagai alat musik pengiring kerapan sapi."
+  },
+  {
+    "id": "km_47",
+    "title": "Koleksi Museum Cakraningrat - Kendang",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Kendang merupakan salah instrumen pada perangkat gamelan yang berfungsi mengatur tempo irama gamelan selain itu memulai dan mengakhiri musik, memberi isyarat peralihan nada, serta mengiringi trari tradisional. kendang juga berperan menciptakan dinamika alur gamelan."
+  },
+  {
+    "id": "km_48",
+    "title": "Koleksi Museum Cakraningrat - Bedhung",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Bedung merupakan alat komunikasi ritual keagamaan (menanda waktu shalat, berbuka puasa, memanggil jamaah) suara yang nyaring bisa menjangkau jauh untuk mengumumkan waktu ibadah."
+  },
+  {
+    "id": "km_49",
+    "title": "Koleksi Museum Cakraningrat - Sarana Hiburan Rakyat",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Sarana hiburan rakyat merupakan peralatan yang dipakai masyarakat dengan memanfaatkan bunyi-bunyian sebagai alat komunikasi dalam perkembangannya digunakan sebagai sarana hiburan dan permainan rakyat antara lain:\n1. KENTHUNGAN : terbuat dari bambu yang dilubangi bagian tengahnya digunakan untuk penanda suatu kejadian\n2. THANG-KATHENG : terbuat dari bambu yang dilubangi bagian-bagian tertentu digunakan sebagai alat musik\n3. THUK-THUK : terbuat dari kayu utuh yang dilubangi di sisi bagian atas berfungsi sebgai alat musik pengiring kerapan sapi\n4. SARONEN : terbuat dari bambu yang dilubangi untuk mengeluarkan binyi nada\n5. GINGGUNG : alat musik dari bambu yang disayat"
+  },
+  {
+    "id": "km_50",
+    "title": "Koleksi Museum Cakraningrat - Tandu",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Tandu merupakan sarana transportasi sederhana yang digunakan untuk mengangkut putri raja atau bangsawan pada masa kerajaan."
+  },
+  {
+    "id": "km_51",
+    "title": "Koleksi Museum Cakraningrat - Naskah kuno",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Naskah Kuno merupakan sebuah karya sastra yang ditemukan didaerah sekitar Bangkalan, ditulis dalam aksara jawa kuno dan arab. Media yang digunakan antara lain daun lontar dan kertas. Sebagai karya sastra dan naskah-naskah tersebut diantaranya berisi tentang masalah syiar agama hingga kisah sejarah dan legenda."
+  },
+  {
+    "id": "km_52",
+    "title": "Koleksi Museum Cakraningrat - Dhammar Toju'",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Dhammar toju' merupakan alat penerangan tradisional bagi para bangsawan Bangkalan. Sedangkan masyarakat kelas bawah cenderung menggunakan celupak lopor/dhamar talpek sebagai penerangan."
+  },
+  {
+    "id": "km_53",
+    "title": "Koleksi Museum Cakraningrat - Dhammar Ganthong",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Dhammar ganthong merupakan alat penerangan yang dikaitkan pada atap rumah bangsawan berdasarkan bahannya. Dhammar ganthong dibedakan menjadi dua jenis yakni berupa kuningan dan kaca."
+  },
+  {
+    "id": "km_54",
+    "title": "Koleksi Museum Cakraningrat - Maket Tanean Lanjhang",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Maket taneyan lanjhang merupakan bentuk tata ruang dalam keluarga inti masyarakat tradisional madura. Pengertian taneyan lanjhang adalah halamanyang luas., artinya bila anak perempuan dalam keluarga inti tersebut telah menikah, maka dibuat bangunan tambahan disebelah kanan atu kiri rumah induk, sedangkan bila anak laki-laki yang menikah, maka dia akan meninggalkan rumah induk dan tinggal dilingkungan keluarga istrinya."
+  },
+  {
+    "id": "km_55",
+    "title": "Koleksi Museum Cakraningrat - Peer (Kereta)",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Peer merupakan salah satu alat transportasi yang digunakan pada tahun 1930-an, bentuk dari peer sendiri ampir mirip dengan delman akan tetapi peer ini digunakan untuk mengangkut barang bawaan seperti barang-barang dari pasar maupun mengangkut rumput. berukuran tinggi dengan roda-roda yang besar. peer ini memiliki alat penerangan yang dipasang di dekat kusir, hewan penarik peer adalah sapi."
+  },
+  {
+    "id": "km_56",
+    "title": "Koleksi Museum Cakraningrat - Meriam",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Meriam peninggalan Cakraningrat II (Sultan R. Abdul Kadir Cakraadiningrat II R. Abdul Kadirun)\nMeriam merupakan senjata peperangan yang terbuat dari perunggu bagian ujungnya diisi peluru sedangkan pada bagian pangkalnya terdapat lubang sumbu untuk meledakkan meriam ditengah meriam terdapat pasak untuk melekatkan meriam pada kereta meriam, meriam ini terbagi menjadi yaitu:\n1. Meriam peninggalan VOC (tahun 1767 dan tahun 1983)\n2. Meriam kembar berlambang cakra tahun 1805\n3. Meriam bermotif hias gunungan\n4. Meriam peninggalan Cakraadiningrat II"
+  },
+  {
+    "id": "km_57",
+    "title": "Koleksi Museum Cakraningrat - Mata Tombak",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Mata tombak merupakan perkakas yang diletakkan pada bagian ujung dari tombak terbuat dari besi baja untuk perang dan pengawalan."
+  },
+  {
+    "id": "km_58",
+    "title": "Koleksi Museum Cakraningrat - Senjata Tradisional",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "Senjata tradisional merupakan warisan budaya yang berasal dari pulau madura dan sekitarnya. digunakan sebagai alat perlindungan diri, yang terdiri dari:\n1. Pisau (Roni) : Peralatan yang lumrah ditemukan di dalam rumah tangga\n2. Celurit (Are') : Peralatan yang lumrah dipakai untk membersihkan rumput\n3. Bhujur : Sebuah identitas jati diri masyarakat madura\n4. Pedang : Peralatan yang dipakai untuk melindungi diri"
+  },
+  {
+    "id": "km_59",
+    "title": "Koleksi Museum Cakraningrat - Tombak, Miniatur Perahu, Cantelan Klambu",
+    "situs": "Museum Cakraningrat",
+    "category": "Koleksi Museum",
+    "location": "Museum Cakraningrat Bangkalan",
+    "content": "MATA TOMBAK:\nMata tombak merupakan perkakas yang diletakkan pada bagian ujung tombak terbuat dari besi baja.\n\nMINIATUR PERAHU:\nMiniatur perahu merupakan bentuk perahu tradisional masyarakat nelayan, terbuat dari kayu yang diperuntukkan untuk menangkap ikan dan sejenisnya, perahu jenis ini menggunakan layar sebagai gaya dorong untuk bergerak dan mengendalikan laju kecepatan perahu.\n\nCANTELAN KLAMBU:\nCantelan klambu merupakan bagian dari rangka tempat tidur yang terbuat dari bahan kuningan berbentuk melengkung seperti kail bagian pangkal terdapat lubang untuk pengikat biasanya berada di pinggiran tempat tidur guna mengaitkan klambu atau tirai tempat tidur."
+  }
+]
