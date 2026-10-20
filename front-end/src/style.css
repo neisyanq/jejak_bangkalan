@@ -1,0 +1,47 @@
+/* ==========================================================================
+   GLOBAL DESIGN TOKENS & RESET - JEJAK BANGKALAN HERITAGE
+   ========================================================================== */
+
+:root {
+    --primary-red: #A83232;
+    --primary-dark: #8C6228;
+    --primary-gold: #B4863A;
+    --bg-cream: #FAF6EC;
+    --bg-card: #FFFFFF;
+    --text-dark: #2C1E14;
+    --text-gray: #6B5E53;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.profile-avatar-img {
+    width: 90px !important;
+    height: 90px !important;
+    max-width: 90px !important;
+    max-height: 90px !important;
+    border-radius: 50% !important;
+    border: 4px solid #FFFFFF !important;
+    object-fit: cover !important;
+}
+
+#userProfileModal .btn-close {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 1055 !important;
+    background-color: #f1ede2 !important;
+    border-radius: 50% !important;
+    padding: 10px !important;
+    opacity: 0.8 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+#userProfileModal .btn-close:hover {
+    opacity: 1 !important;
+    background-color: #e2dac9 !important;
+}

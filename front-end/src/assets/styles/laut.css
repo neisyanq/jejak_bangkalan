@@ -1,0 +1,1034 @@
+/* Stylesheet untuk LautPage (Diekstrak dari laut.php) */
+/* ========================================================
+           CSS GAME LAUT DASAR
+           ======================================================== */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #0077be;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: none;
+        }
+
+        #gameCanvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        #playerSprite {
+            position: absolute;
+            z-index: 5;
+            pointer-events: none;
+            display: none;
+            transition: transform 0.2s ease-out;
+        }
+
+        /* TOMBOL KONTROL SUARA DAN PAUSE DI KIRI ATAS */
+        .game-ctrl-ui {
+            position: absolute;
+            top: 25px;
+            left: 35px;
+            z-index: 15;
+            display: none;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .ctrl-btn {
+            width: 60px;
+            height: 60px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            transition: transform 0.2s;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+            padding: 0;
+            margin: 0;
+        }
+
+        .ctrl-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .ctrl-btn:active {
+            transform: scale(0.9);
+        }
+
+        #btnBackHome {
+            background-image: url('/img/labirin/back.png');
+            position: relative;
+            top: 2px;
+            left: 0px;
+        }
+
+        #btnMute {
+            background-image: url('/img/labirin/suara.png');
+            position: relative;
+            top: 2px;
+            left: 0px;
+        }
+
+        #btnPause {
+            background-image: url('/img/labirin/pause.png');
+            position: relative;
+            top: 2.5px;
+            left: 0px;
+        }
+
+        .game-ui {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            text-align: right;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border: 2px solid #fff;
+            display: none;
+        }
+
+        .heart-icon {
+            color: #ff4d4d;
+            font-size: 24px;
+        }
+
+        .star-icon {
+            color: #ffd700;
+            font-size: 24px;
+        }
+
+        .score-text {
+            font-size: 20px;
+            font-family: 'Press Start 2P', cursive;
+            margin-left: 10px;
+        }
+
+        #startScreen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 30;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Mengubah styling untuk menampung gambar judul */
+        .title-game {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .title-game img {
+            max-width: 80%; /* Sesuaikan ukuran gambar */
+            height: auto;
+            filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.5)); /* Efek shadow opsional */
+        }
+
+        #playBtnCss {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2rem;
+            padding: 20px 40px;
+            background-color: #4CAF50;
+            color: #FFF;
+            border: 5px solid #FFF;
+            border-radius: 15px;
+            cursor: pointer;
+            display: none;
+            text-shadow: 3px 3px 0 #000;
+            box-shadow: 0px 8px 0px #2E7D32, 0px 15px 15px rgba(0, 0, 0, 0.4);
+            transition: all 0.1s ease-in-out;
+        }
+
+        #playBtnCss:hover {
+            background-color: #45a049;
+            transform: translateY(3px);
+            box-shadow: 0px 5px 0px #2E7D32, 0px 10px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        #playBtnCss:active {
+            transform: translateY(8px);
+            box-shadow: 0px 0px 0px #2E7D32, 0px 5px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        #countdownOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 40;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        #countdownText {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 8rem;
+            color: #fff;
+            text-shadow: 6px 6px 0px #000;
+            animation: zoomInOut 1s ease-in-out infinite;
+        }
+
+        @keyframes zoomInOut {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+
+        #gameOverScreen {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            z-index: 20;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        #gameOverScreen h1 {
+            color: #ff4d4d;
+            text-shadow: 4px 4px 0 #000;
+            margin-bottom: 20px;
+        }
+
+        .btn-restart {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1rem;
+            padding: 15px 30px;
+            margin-top: 30px;
+            background-color: #FFD700;
+            color: #000;
+            border: 4px solid #fff;
+        }
+
+        #controlsContainer {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            z-index: 15;
+            display: none;
+            align-items: flex-end;
+        }
+
+        .control-btn {
+            width: 127px;
+            height: 127px;
+            background-size: cover;
+            background-position: center;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s, transform 0.1s;
+        }
+
+        .control-btn:active {
+            opacity: 1;
+            transform: scale(0.9);
+        }
+
+        #btnJump {
+            background-image: url('/img/laut/tombol\ lompat.png');
+        }
+
+        #loadingText {
+            display: none;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #fff;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* ========================================================
+           CSS KUIS DARI GAME ADVENTURE (MODAL KUIS)
+           ======================================================== */
+        .game-level-page {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 2000;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: hidden;
+        }
+
+        .game-level-page.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .gl-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            opacity: 0.95;
+        }
+
+        .gl-top-bar {
+            position: absolute;
+            top: 1px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .gl-header-left {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .gl-level-info {
+            background-color: transparent;
+            border: none;
+            width: 190px;
+            height: 100px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0;
+            padding-bottom: 8px;
+            margin: 0;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gl-stats-container {
+            display: flex;
+            gap: 15px;
+            background: rgba(90, 17, 14, 0.85);
+            border: 2px solid #D4AF37;
+            border-radius: 30px;
+            padding: 8px 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .gl-stat-item {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .gl-stat-divider {
+            width: 2px;
+            height: 25px;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin: 0 5px;
+        }
+
+        .gl-content {
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 20px;
+            gap: 20px;
+        }
+
+        .gl-character-area {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .gl-character-img {
+            width: 100%;
+            object-fit: contain;
+            filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.4));
+            z-index: 2;
+            position: relative;
+            left: 20px;
+            bottom: -20px;
+            transform: scale(1.3);
+            transform-origin: bottom center;
+        }
+
+        .gl-speech-bubble {
+            position: absolute;
+            top: -40px;
+            right: -20px;
+            background: #fffcf5;
+            border: 3px solid #D4AF37;
+            border-radius: 20px;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 3;
+            width: max-content;
+            max-width: 280px;
+            line-height: 1.4;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .gl-speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 30px;
+            border-width: 15px 15px 0;
+            border-style: solid;
+            border-color: #fffcf5 transparent transparent transparent;
+            display: block;
+            width: 0;
+            z-index: 2;
+        }
+
+        .gl-speech-bubble::before {
+            content: '';
+            position: absolute;
+            bottom: -19px;
+            left: 28px;
+            border-width: 18px 18px 0;
+            border-style: solid;
+            border-color: #D4AF37 transparent transparent transparent;
+            display: block;
+            width: 0;
+            z-index: 1;
+        }
+
+        .gl-quiz-panel {
+            width: 850px;
+            height: 580px;
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            box-sizing: border-box;
+            padding: 80px 100px 50px 100px;
+            display: flex;
+            flex-direction: column;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+            margin-bottom: 10px;
+        }
+
+        .gl-quiz-header {
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 100px;
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            padding: 0 20px 5px 60px;
+            color: white;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            white-space: nowrap;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .gl-question-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #333;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .gl-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .gl-option {
+            display: flex;
+            align-items: center;
+            background: #fcf8ee;
+            border: 2px solid #d1bfae;
+            border-radius: 30px;
+            padding: 8px 20px 8px 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .gl-option:hover {
+            background: #f5eedc;
+            transform: translateY(-2px);
+        }
+
+        .gl-option.selected {
+            background: #FFD700;
+            border-color: #B8860B;
+            box-shadow: 0 4px 10px rgba(184, 134, 11, 0.3);
+        }
+
+        .gl-option input[type="radio"] {
+            display: none;
+        }
+
+        .gl-option-letter {
+            width: 40px;
+            height: 40px;
+            background: #5A110E;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            border: 2px solid #D4AF37;
+        }
+
+        .gl-option.selected .gl-option-letter {
+            background: #5A110E;
+        }
+
+        .gl-option-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            flex-grow: 1;
+        }
+
+        .gl-check {
+            display: none;
+            color: white;
+            background: #5A110E;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .gl-option.selected .gl-check {
+            display: flex;
+        }
+
+        /* FEEDBACK JAWABAN BENAR (CEKLIS HIJAU) & SALAH (SILANG MERAH) */
+        .gl-option.correct {
+            background: #d4edda !important;
+            border-color: #28a745 !important;
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.35) !important;
+        }
+
+        .gl-option.correct .gl-option-letter {
+            background: #28a745 !important;
+            border-color: #1e7e34 !important;
+            color: #fff !important;
+        }
+
+        .gl-option.correct .gl-option-text {
+            color: #155724 !important;
+            font-weight: 700;
+        }
+
+        .gl-option.correct .gl-check {
+            display: flex !important;
+            background: #28a745 !important;
+            color: #fff !important;
+            box-shadow: 0 2px 6px rgba(40, 167, 69, 0.4);
+            animation: popIconQuiz 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .gl-option.wrong {
+            background: #f8d7da !important;
+            border-color: #dc3545 !important;
+            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.35) !important;
+        }
+
+        .gl-option.wrong .gl-option-letter {
+            background: #dc3545 !important;
+            border-color: #bd2130 !important;
+            color: #fff !important;
+        }
+
+        .gl-option.wrong .gl-option-text {
+            color: #721c24 !important;
+            font-weight: 700;
+        }
+
+        .gl-option.wrong .gl-check {
+            display: flex !important;
+            background: #dc3545 !important;
+            color: #fff !important;
+            box-shadow: 0 2px 6px rgba(220, 53, 69, 0.4);
+            animation: shakeIconQuiz 0.4s ease-in-out;
+        }
+
+        @keyframes popIconQuiz {
+            0% { transform: scale(0); }
+            80% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes shakeIconQuiz {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            50% { transform: translateX(4px); }
+            75% { transform: translateX(-4px); }
+        }
+
+        .gl-quiz-footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .gl-pagination {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .gl-dot {
+            width: 10px;
+            height: 10px;
+            background: #d1bfae;
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .gl-dot.active-diamond {
+            background: #D4AF37;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #5A110E;
+        }
+
+        .gl-btn-lanjut {
+            position: absolute;
+            right: 0;
+            background: linear-gradient(180deg, #7A1B17, #5A110E);
+            border: 2px solid #D4AF37;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 8px 30px;
+            border-radius: 30px;
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: 0.2s;
+        }
+
+        .gl-btn-lanjut:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+
+
+        /* ========================================================
+           REVISI DOSEN: MINIMAP (ALA MOBILE LEGENDS), ANALOG JOYSTICK,
+           TOMBOL AKSI (DASH & SONAR), OKSIGEN & VICTORY SCREEN
+           ======================================================== */
+        #minimapContainer {
+            position: absolute;
+            top: 96px;
+            left: 35px;
+            width: 275px;
+            height: 168px;
+            background: rgba(4, 22, 42, 0.88);
+            border: 3px solid #D4AF37;
+            outline: 2px solid rgba(0, 225, 255, 0.65);
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65), 0 0 15px rgba(0, 210, 255, 0.35), inset 0 0 18px rgba(0, 180, 255, 0.25);
+            z-index: 15;
+            display: none;
+            overflow: hidden;
+            backdrop-filter: blur(6px);
+            cursor: pointer;
+            transition: width 0.25s ease, height 0.25s ease, box-shadow 0.2s ease;
+        }
+
+        #minimapContainer.expanded {
+            width: 390px;
+            height: 235px;
+        }
+
+        #minimapContainer:hover {
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75), 0 0 22px rgba(255, 215, 0, 0.55), inset 0 0 20px rgba(0, 210, 255, 0.35);
+        }
+
+        /* Sudut ornamen emas ala frame peta Mobile Legends */
+        .minimap-corner {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-color: #FFD700;
+            border-style: solid;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .minimap-corner.tl { top: 2px; left: 2px; border-width: 3px 0 0 3px; border-top-left-radius: 6px; }
+        .minimap-corner.tr { top: 2px; right: 2px; border-width: 3px 3px 0 0; border-top-right-radius: 6px; }
+        .minimap-corner.bl { bottom: 2px; left: 2px; border-width: 0 0 3px 3px; border-bottom-left-radius: 6px; }
+        .minimap-corner.br { bottom: 2px; right: 2px; border-width: 0 3px 3px 0; border-bottom-right-radius: 6px; }
+
+        #minimapHeader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 24px;
+            padding: 0 10px;
+            background: linear-gradient(90deg, rgba(10, 38, 68, 0.92), rgba(25, 75, 120, 0.75), rgba(10, 38, 68, 0.92));
+            border-bottom: 1px solid rgba(212, 175, 55, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 800;
+            color: #FFD700;
+            text-shadow: 1px 1px 2px #000;
+            z-index: 2;
+            letter-spacing: 0.6px;
+        }
+
+        #minimapLegend {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            padding: 0 8px;
+            background: rgba(3, 15, 30, 0.88);
+            border-top: 1px solid rgba(0, 210, 255, 0.35);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 9.5px;
+            font-weight: 700;
+            color: #e0f7ff;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .legend-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #minimapCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Efek layar berkedip merah saat terkena Ikan Berduri (ikan6) */
+        #damageOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 18;
+            background: radial-gradient(circle, transparent 50%, rgba(255, 0, 0, 0.65) 100%);
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+
+        /* Toast notifikasi mengambang saat kena ikan6 atau ramah */
+        #floatingNotice {
+            position: absolute;
+            top: 85px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 19;
+            background: rgba(15, 25, 45, 0.88);
+            border: 2px solid #FFD700;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            display: none;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        /* HUD TAMBAHAN (PETI & OKSIGEN) */
+        .hud-extra-row {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 13px;
+            color: #ffd700;
+        }
+
+        .oxygen-bar-wrap {
+            margin-top: 8px;
+            width: 155px;
+            height: 14px;
+            background: rgba(0, 0, 0, 0.65);
+            border: 2px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #oxygenBarFill {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            transition: width 0.15s linear;
+        }
+
+        /* JOYSTICK BULET TRANSPARAN (KIRI BAWAH) */
+        #controlsContainer {
+            position: absolute;
+            bottom: 30px;
+            left: 35px;
+            z-index: 15;
+            display: none;
+            align-items: center;
+            gap: 18px;
+        }
+
+        #joystickZone {
+            position: relative;
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.06) 70%, rgba(0, 210, 255, 0.22) 100%);
+            border: 2.5px solid rgba(255, 255, 255, 0.45);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35), inset 0 0 15px rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(3px);
+            touch-action: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Panah arah tipis di dalam lingkaran joystick */
+        .joy-dir {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 14px;
+            pointer-events: none;
+        }
+        .joy-dir.up { top: 8px; left: 50%; transform: translateX(-50%); }
+        .joy-dir.down { bottom: 8px; left: 50%; transform: translateX(-50%); }
+        .joy-dir.left { left: 10px; top: 50%; transform: translateY(-50%); }
+        .joy-dir.right { right: 10px; top: 50%; transform: translateY(-50%); }
+
+        #joystickKnob {
+            position: absolute;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.75), rgba(170, 235, 255, 0.38));
+            border: 2px solid rgba(255, 255, 255, 0.85);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            pointer-events: none;
+            transform: translate(0px, 0px);
+            transition: transform 0.05s linear;
+        }
+
+        /* TOMBOL AKSI BULET TRANSPARAN DI KANAN BAWAH */
+        #actionButtonsContainer {
+            position: absolute;
+            bottom: 30px;
+            right: 35px;
+            z-index: 15;
+            display: none;
+            align-items: flex-end;
+            gap: 16px;
+        }
+
+        .round-glass-btn {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.32), rgba(0, 180, 255, 0.18));
+            border: 2.5px solid rgba(255, 255, 255, 0.65);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), inset 0 0 12px rgba(255, 255, 255, 0.25);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            backdrop-filter: blur(3px);
+            transition: transform 0.12s ease, background 0.2s ease, opacity 0.2s;
+            position: relative;
+            user-select: none;
+        }
+
+        .round-glass-btn i {
+            font-size: 24px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        .round-glass-btn span {
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .round-glass-btn:active {
+            transform: scale(0.88);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.55), rgba(0, 210, 255, 0.35));
+        }
+
+        .round-glass-btn.cooldown {
+            opacity: 0.45;
+            pointer-events: none;
+        }
+
+        #btnDash {
+            width: 90px;
+            height: 90px;
+            border-color: rgba(255, 215, 0, 0.8);
+            background: radial-gradient(circle at 35% 30%, rgba(255, 230, 100, 0.35), rgba(255, 140, 0, 0.18));
+        }
+
+        /* LAYAR MENANG (VICTORY SCREEN) */
+        #victoryScreen {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 25, 50, 0.88);
+            color: white;
+            z-index: 25;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #victoryScreen h1 {
+            color: #FFD700;
+            text-shadow: 4px 4px 0 #000;
+            margin-bottom: 18px;
+            font-size: 2.4rem;
+        }
+
+        #kuisCharacterImg[src*="marlena_betul"] {
+            transform: scale(0.9) !important;
+            transform-origin: bottom center !important;
+        }
